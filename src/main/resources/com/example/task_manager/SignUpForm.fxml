@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.PasswordField?>
 <AnchorPane fx:id="signUpPane" prefHeight="380.0" prefWidth="280.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" stylesheets="@../../../styles/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task_manager.SignUpFormController">
    <children>
       <TextField fx:id="txtUsername" layoutX="27.0" layoutY="68.0" prefHeight="42.0" prefWidth="226.0" promptText="Enter Username" style="-fx-background-color: white; -fx-border-color: #c8c8c8; -fx-background-radius: 50; -fx-border-radius: 50;">
@@ -16,16 +17,16 @@
             <Insets bottom="10.0" left="20.0" top="10.0" />
          </padding>
       </TextField>
-      <TextField fx:id="txtConfirmPassword" layoutX="27.0" layoutY="246.0" onAction="#passwordConfirmOnAction" prefHeight="42.0" prefWidth="226.0" promptText="Confirm Password" style="-fx-background-color: white; -fx-border-color: #c8c8c8; -fx-background-radius: 50; -fx-border-radius: 50;">
+      <PasswordField fx:id="txtConfirmPassword" layoutX="27.0" layoutY="246.0" onAction="#passwordConfirmOnAction" prefHeight="42.0" prefWidth="226.0" promptText="Confirm Password" style="-fx-background-color: white; -fx-border-color: #c8c8c8; -fx-background-radius: 50; -fx-border-radius: 50;">
          <padding>
             <Insets bottom="10.0" left="20.0" top="10.0" />
          </padding>
-      </TextField>
-      <TextField fx:id="txtPassword" layoutX="27.0" layoutY="188.0" prefHeight="42.0" prefWidth="226.0" promptText="Enter Password" style="-fx-background-color: white; -fx-border-color: #c8c8c8; -fx-background-radius: 50; -fx-border-radius: 50;">
+      </PasswordField>
+      <PasswordField fx:id="txtPassword" layoutX="27.0" layoutY="188.0" prefHeight="42.0" prefWidth="226.0" promptText="Enter Password" style="-fx-background-color: white; -fx-border-color: #c8c8c8; -fx-background-radius: 50; -fx-border-radius: 50;">
          <padding>
             <Insets bottom="10.0" left="20.0" top="10.0" />
          </padding>
-      </TextField>
+      </PasswordField>
       <TextField fx:id="txtEmail" layoutX="27.0" layoutY="129.0" prefHeight="42.0" prefWidth="226.0" promptText="Enter Email" style="-fx-background-color: white; -fx-border-color: #c8c8c8; -fx-background-radius: 50; -fx-border-radius: 50;">
          <padding>
             <Insets bottom="10.0" left="20.0" top="10.0" />

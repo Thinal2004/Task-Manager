@@ -152,7 +152,6 @@ public class DashboardFormController {
                 String oldId = resultSet.getString(1);
                 oldId = oldId.substring(1,oldId.length());
                 int intID = Integer.parseInt(oldId);
-                System.out.println(intID);
                 intID = intID +1;
 
 

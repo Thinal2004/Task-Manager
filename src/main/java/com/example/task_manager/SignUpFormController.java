@@ -63,8 +63,6 @@ public class SignUpFormController {
         hideCommon(false);
 
         if(newPassword.equals(confirmPassword)  && !username.isEmpty() && !email.isEmpty() && !newPassword.isEmpty() && !confirmPassword.isEmpty()){
-            System.out.println("done");
-            System.out.println(autoGenerateID());
 
             Connection connection = DBConnection.getInstance().getConnection();
             try {
@@ -128,9 +126,7 @@ public class SignUpFormController {
                 String oldId = resultSet.getString(1);
                 oldId = oldId.substring(1,oldId.length());
                 int intID = Integer.parseInt(oldId);
-                System.out.println(intID);
                 intID = intID +1;
-
 
                 if(intID<10){
                     id = "U00" + intID;
