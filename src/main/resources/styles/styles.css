@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand/static/Quicksand-Regular.ttf");
+}
+
+Label, TextField , Button{
+    -fx-font-family: "Poppins";
+}
+
+#helloLbl{
+    -fx-font-family: "Poppins";
+    -fx-font-weight: bold;
+}
+
+.loginBtn:hover{
+    -fx-font-size: 15px;
+    -fx-font-family: "Poppins";
+}
+
+#dayLbl{
+    -fx-font-family: "Quicksand";
+    -fx-font-weight: bold;
+}
+
+
+
+
